@@ -11,7 +11,7 @@ function AppNavigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="StartScreen">
-        <Stack.Screen name="StartScreen" component={WeatherForecast} />
+        <Stack.Screen name="Weather" component={WeatherForecast} />
       </Stack.Navigator>
     </NavigationContainer>
   );

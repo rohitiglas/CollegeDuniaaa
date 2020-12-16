@@ -1,5 +1,14 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, Image, Text} from 'react-native';
+const days = [
+  'Sun',
+  'Mon',
+  'Tue',
+  'Wed',
+  'Thu',
+  'Fri',
+  'Sat',
+];
 
 export default class ForecastCard extends Component {
   render() {
@@ -7,6 +16,8 @@ export default class ForecastCard extends Component {
 
     // Create a new date from the passed date time
     const date = new Date(this.props.detail.dt * 1000);
+    const dateValue = new Date(this.props.detail.dt_txt);
+    const dayName = days[date.getDay()];
 
     // Hours part from the timestamp
     const hours = date.getHours();
@@ -35,7 +46,10 @@ export default class ForecastCard extends Component {
                 '.png',
             }}
           />
-          <Text style={styles.time}>{time}</Text>
+          <View>
+            <Text style={styles.date}>{dayName}</Text>
+            <Text style={styles.time}>{time}</Text>
+          </View>
         </View>
 
         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
@@ -61,6 +75,11 @@ const styles = StyleSheet.create({
   time: {
     marginRight: 10,
     fontSize: 38,
+    color: '#fff',
+  },
+  date: {
+    marginRight: 10,
+    fontSize: 18,
     color: '#fff',
   },
   notes: {

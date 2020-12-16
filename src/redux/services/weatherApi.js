@@ -6,6 +6,6 @@ export const fetchWeatherData = (params) => {
       params.lat +
       '&lon=' +
       params.lng +
-      '&units=metric&appid=e0958edd20a28f103f1fc77428fe620b',
+      '&units=days&appid=e0958edd20a28f103f1fc77428fe620b',
   );
 };

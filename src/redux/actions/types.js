@@ -1,0 +1,1 @@
+export const FETCH_WEATHER_DATA = 'FETCH_WEATHER_DATA';

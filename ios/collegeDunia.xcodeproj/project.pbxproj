@@ -18,7 +18,6 @@
 		2DCD954D1E0B4F2C00145EB5 /* collegeDuniaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* collegeDuniaTests.m */; };
 		5B9950CB3B5EFB8D57DC03E6 /* libPods-collegeDunia-collegeDuniaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6701B785B7CD65E75F5C5118 /* libPods-collegeDunia-collegeDuniaTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8384DC62F2BC252B2E202FCD /* libPods-collegeDunia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 955C009C2BBDC4A1C9F83751 /* libPods-collegeDunia.a */; };
 		8E80E7B100E7EDBC3E283AC7 /* libPods-collegeDunia-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A190436FB7FB407B31B941 /* libPods-collegeDunia-tvOS.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +61,7 @@
 		955C009C2BBDC4A1C9F83751 /* libPods-collegeDunia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-collegeDunia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7DAA388DE38197ECE5CC3E /* libPods-collegeDunia-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-collegeDunia-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF600BAD818A6B9DF848CE9 /* Pods-collegeDunia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collegeDunia.debug.xcconfig"; path = "Target Support Files/Pods-collegeDunia/Pods-collegeDunia.debug.xcconfig"; sourceTree = "<group>"; };
+		ADEE5CC22588B8BC0018D02C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BFFCB897E8F2D6F22D6364BF /* Pods-collegeDunia-collegeDuniaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collegeDunia-collegeDuniaTests.debug.xcconfig"; path = "Target Support Files/Pods-collegeDunia-collegeDuniaTests/Pods-collegeDunia-collegeDuniaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E231C31E2CF2A721D617F79D /* Pods-collegeDunia-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collegeDunia-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-collegeDunia-tvOSTests/Pods-collegeDunia-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2A190436FB7FB407B31B941 /* libPods-collegeDunia-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-collegeDunia-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8384DC62F2BC252B2E202FCD /* libPods-collegeDunia.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +138,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADEE5CC22588B8BC0018D02C /* CoreLocation.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				955C009C2BBDC4A1C9F83751 /* libPods-collegeDunia.a */,
@@ -194,7 +194,6 @@
 				3F48C9A74879F0C4DCE971C2 /* Pods-collegeDunia-tvOSTests.debug.xcconfig */,
 				E231C31E2CF2A721D617F79D /* Pods-collegeDunia-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

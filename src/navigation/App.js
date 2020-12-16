@@ -7,7 +7,7 @@ import WeatherForecast from '../screens/container/weather/WeatherForecast';
 
 const Stack = createStackNavigator();
 
-function App() {
+function AppNavigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="StartScreen">
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppNavigation;

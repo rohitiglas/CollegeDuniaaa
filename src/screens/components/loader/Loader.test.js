@@ -11,7 +11,11 @@ describe('Lottie loader', () => {
     cleanup();
     wrapper = null;
   });
-  it('should render Loader correctly', () => {
+  it('should render Loader when loading is true', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+  it('should not  render Loader when loading is false', () => {
+    wrapper = render(<LottieLoader loading={false} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

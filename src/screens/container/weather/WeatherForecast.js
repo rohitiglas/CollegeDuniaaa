@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import {View, FlatList, Alert,Text} from 'react-native';
-import Error from '../../components/ErrorScreen';
+import Error from '../../components/error/ErrorScreen';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {fetchAllWeatherData} from '../../../redux/actions/weatherAction';
 import ForecastCard from '../../components/WeatherForecastCard';
-import LottieLoader from '../../components/LottieLoader';
+import LottieLoader from '../../components/loader/LottieLoader';
 import Geolocation from '@react-native-community/geolocation';
 const WeatherForecast = ({actions}) => {
   const [weatherData, setWeatherData] = useState([]);
